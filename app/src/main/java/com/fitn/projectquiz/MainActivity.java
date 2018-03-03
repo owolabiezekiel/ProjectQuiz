@@ -2,6 +2,7 @@ package com.fitn.projectquiz;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -71,6 +72,8 @@ public class MainActivity extends AppCompatActivity {
             resultView.setText(quizResult);
 
             Toast.makeText(this, "Thanks For Taking This Quiz", Toast.LENGTH_SHORT).show();
+
+
 
             Intent viewResult = new Intent(this, QuizResult.class);
             viewResult.putExtra("Quiz_Result", quizResult);
